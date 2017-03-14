@@ -1,0 +1,813 @@
+#name "Алгоритм Луна"
+// Author: Vint
+// Version: 1.2 (07.03.2017)
+// Скрипт для Clickermann v4.12 001
+// 4561 2612 1234 5467
+//#autorun
+#define qpdhbhddpq:qhddbbhp
+#define qbddphpbbq:pbq
+#define qdphhddppq:pbbq
+#define qdpbphhdhq:hdhphbbbq
+#define qhbhhbpppq:qqbddpdhp
+#define qppdbppbbq:hbbhdq
+#define qbddbpbdbq:dppqq
+#define qhppdbpdbq:hhdpqqbdpbd
+#define qbhphbdpbq:dbq
+#define qbbbpdbdpq:T(HTTPPO
+#define qdpbphbbbq:qhphddppbqqhhbp
+#define qdppbdpdbq:qqdbpbhbbbqqhh
+#define qpdpddppbq:bqqdbpdppbhqqppd
+#define qdddpdhphq:qpd
+#define qbbbpdhhbq:dbphhhqqdphphd
+#define qdbhpddddq:qbhhb
+#define qppphbhhbq:qqphdhbd
+#define qdhbddbddq:qhppddhphq
+#define qbddbbbhbq:hhbpdqqdbp
+#define qhdppdbpbq:qbb
+#define qpbbpdbphq:qdphhdpbdq
+#define qhbhhdhdpq:hbdppq
+#define qhbhdbdbbq:qphbp
+#define qhphbbdhdq:qdddhpbpb
+#define qpdbbbhhdq:qdhpd
+#define qdhhbddhpq:hhbhdq
+#define qddddpbhbq:dbddpqqbbhdb
+#define qpphdbhpdq:bbhpbq
+#define qdpdpphbhq:qbbddpd
+#define qbbpdbpbhq:bbqqhpbbppbhq
+#define qbbddbbhpq:qpppd
+#define qpddbbdhpq:dddhbhbdq
+#define qpbpdhphpq:hhqqdhdbh
+#define qbpdbbdppq:ppdhqqhddbdpb
+#define qhdbppdhbq:pqqdpddphbbq
+#define qdhphppddq:qbdhhbhphq
+#define qdhhpbppbq:dbhdhpq
+#define qddhbdhhhq:qhbpdhdppq
+#define qhbhbpdphq:hbpdpq
+#define qhdhbdhppq:bphdqqbhh
+#define qhbpdpbhpq:bbq
+#define qdbbdhhphq:qhbdhb
+#define qbbhbhphpq:qppbbhb
+#define qbhhbdhphq:qhph
+#define qhdphhpbbq:qhdd
+#define qhbppddpdq:pdbpbdpdqqdd
+#define qbdbbhbhdq:dppppq
+#define qdhbhhdhbq:bdhppphhq
+#define qdbpdhpbbq:dhdbphphq
+#define qddbdbbbhq:bbbpppq
+#define qdbbbhbbbq:dppqqddddhdbhq
+#define qpppbddbhq:dhqqp
+#define qhpbbpdphq:pdphqqdh
+#define qbbddbpphq:qbdp
+#define qbbddbbhhq:qbdhp
+#define qhhbpdhhhq:qbhdbh
+#define qhpphbhhhq:bhhhbbbq
+#define qhpbhppbdq:qdppddbbh
+#define qdphdddbdq:hhqqbb
+#define qbpdddbppq:hdhqqdbp
+#define qhddppbhbq:qdpdb
+#define qdhbbdhphq:hbpqqphhdhhphqqbbpp
+#define qhhhhddhpq:qdb
+#define qpbpphpbhq:bphdbhdq
+#define qdbbdhphdq:qpbdhphhhq
+#define qdhhpbdhhq:qbpphp
+#define qdbhphbhpq:ppdq
+#define qpppbpdhpq:qdbhphhhd
+#define qhbdbphpbq:bphbqqbp
+#define qdphpdbdhq:hdqqhhddbphd
+#define qdddpddpdq:phqqbd
+#define qhbppdhphq:LACE(STRRE
+#define qbdhbbdbdq:ddphq
+#define qpdphhphbq:hdqqbh
+#define qbhdbdhdbq:pbhpphqqbbppd
+#define qbdpdbdhbq:qdphbppbh
+#define qpbbhbbdhq:dbbbhhpdq
+#define qbbdbdbhbq:hbhdqqdd
+#define qhbdbdhphq:pbbdhq
+#define qhpbhpppbq:qdb
+#define qbbdhphbpq:qbbddp
+#define qhbbhbhhpq:hdq
+#define qpdphbpdbq:hbhq
+#define qbhbdddbdq:qpbh
+#define qddppdbphq:dhbbpbq
+#define qdpbhhbbdq:hhqqbbbphpdbqqhp
+#define qhphhhhdhq:qhddhphdb
+#define qhbbhpdhbq:bbpdhq
+#define qbdhbbphpq:bqqbbddppbh
+#define qbppdhbppq:qdbhhdb
+#define qpdbhbdhpq:phpdqqp
+#define qppbhdbhpq:hbdhpdhbq
+#define qdbdphpbpq:qhdhhbd
+#define qbbhhbhppq:pppdpq
+#define qdbhppdhhq:qqppbpddh
+#define qbdpbhdbdq:hphphppq
+#define qhbbphbhhq:bpqqbhphbpdhqqbbb
+#define qbpdbhdddq:qpbbhbd
+#define qdhphhbhdq:qhbpbd
+#define qbpbhpbphq:pphq
+#define qhphdpbbbq:qdhdpb
+#define qdhbbppdpq:pbddbdhqqbd
+#define qphbbhhppq:qhpbdhhbd
+#define qbhhpdppbq:hbq
+#define qhdbpdpppq:qbdbh
+#define qhhpdhbbbq:bppppqq
+#define qhhbhdbdpq:hpppphqq
+#define qpdhphbbpq:qdhhdphpb
+#define qpdhbdpdhq:TTEXT(HGE
+#define qbhhhpphbq:hddphpqqpbphb
+#define qdbhbbpppq:dhhdhq
+#define qpphdppdhq:pbphqq
+#define qhbhpdhhbq:hdhpbq
+#define qdbhhdpdbq:qdbdbbbh
+#define qbphphbphq:pbpq
+#define qhpbdpphpq:(DIST(HGE
+#define qphbhhdphq:qbpphp
+#define qhbbpbdhbq:qdphpd
+#define qbpbppbhpq:hphbqqdpdbdppbqqd
+#define qphhpdppdq:pdqq
+#define qhhhhbhhhq:hdhdqqdhhpbh
+#define qppdddhhhq:dpdbqqbbh
+#define qbhddhdphq:qddpbh
+#define qhdhdhdbpq:qbhhphp
+#define qhpdbhpbpq:hhhdhhdq
+#define qpdhdpppbq:qbdh
+#define qhhbpdbhpq:qhbdbb
+#define qddpbhbhdq:phbqqpbbdpdbdqqpb
+#define qbdphdbphq:qdbhb
+#define qdhhppdbhq:qqhhbhhphpqq
+#define qbbpddbppq:dhpphpqqhhdbp
+#define qphbbddhhq:dqqbphbbpdbqq
+#define qddbpbhddq:bpdbbpqqpbh
+#define qdpppbbdbq:qhp
+#define qphdpdhbdq:qbbpbbb
+#define qhdhpddphq:phqq
+#define qhbbpdpdbq:pdqqdh
+#define qbbdhdbdbq:qphhd
+#define qddphhphhq:THREAD(WNDF
+#define qdpphbhbpq:qdbbd
+#define qpddphddbq:ppqqddhdbdddq
+#define qhbhdbhhbq:hdbdhbbbq
+#define qhdpbhpdpq:qbdhpdbdbq
+#define qpdhdphbbq:hbq
+#define qpdhpppppq:hhdhqqbdd
+#define qbpbbdbbdq:qhdpbh
+#define qdhdbhpdbq:pdbq
+#define qdpdpdpppq:dbpdqqbdpb
+#define qbpddddddq:bpbdhbqqphhbdd
+#define qbpppbdbpq:bdphbq
+#define qhdhpbhphq:qhdbhpp
+#define qbhhpbpbhq:bpbq
+#define qdbpdpbhpq:pbpbbpqq
+#define qpbdpbdhdq:GE(TFC
+#define qbhbbdppbq:ddqqh
+#define qddhhpbdhq:pqqhbbbphhp
+#define qpbhdhhhdq:qhppb
+#define qdpdddpdpq:qbhddh
+#define qbhddphphq:ddpqqbhbpp
+#define qpddhdpdbq:bbbqqhbb
+#define qhbpbhdhhq:qqdhdhphbhq
+#define qdbbhppdbq:ddqqh
+#define qbphbdpphq:qdpb
+#define qdphbppbdq:bbbpbhpq
+#define qbddhpbpdq:dqqbhbhpbhbq
+#define qdddddpphq:pdphpbdq
+#define qhhddbdhhq:qpddhpdbbq
+#define qbhpbbbhdq:dhppbbqqdbd
+#define qhpbdpbdbq:bbq
+#define qhdpppdhdq:bhpbphbpq
+#define qdhhhddbpq:qddbb
+#define qpdppdhhpq:bhbdbhdhq
+#define qpdpbbhbpq:dppbbq
+#define qbddbhbbbq:dpbbbddq
+#define qbhhhbpbdq:IN(IF_PICT
+#define qhpbpdbphq:qqbbhpbdhbqqh
+#define qpbpbbdhpq:pphpbdq
+#define qpddphhphq:bpbqqp
+#define qppbdphdhq:bqqdpbhbdhb
+#define qdbbdbpbpq:qbpdb
+#define qhdbphdppq:bhhhhhhq
+#define qbppbpddbq:hqqbbhbhb
+#define qbpbhbpphq:ddbhq
+#define qhpbbbbhhq:ddhdqqhhbbbbhdqq
+#define qbbddbdhhq:qhbdhhp
+#define qppbbdddhq:hdbbqqbbhbd
+#define qhhpphppdq:qddhph
+#define qdphpddpdq:qbbbbhh
+#define qbbppbpdhq:qpdphp
+#define qddddbdbhq:dbbbdq
+#define qppdbdhpbq:COS(ARCSIN(A
+#define qphbhpdpdq:bbhpbq
+#define qpbdphbpbq:bpdbhq
+#define qbdphhbhbq:hbdq
+#define qdhbbhhpdq:qbpbppd
+#define qbbbbbphpq:hbphhpq
+#define qdbpbpdbpq:qppbpdddd
+#define qdbbpbdbhq:bpbhhq
+#define qdpppphphq:hdphq
+#define qbddpddhhq:qphddp
+#define qhbdbddpdq:ddbbhppdq
+#define qbhpbpbdhq:dhhq
+#define qhpbpbhpdq:dphbqqphbb
+#define qppdpdhhbq:ppddqqh
+#define qpbdphhhhq:qbbppdb
+#define qhddbbphbq:hpbddpbbq
+#define qbpdpbbhbq:ddppqqhbbbh
+#define qdbbbppdbq:hppqqdpdh
+#define qbbddbbphq:qhhbph
+#define qdhhpdhhdq:hdpdhphq
+#define qppdhbdppq:qdph
+#define qhdddhdhhq:qqhpbbbbdpqq
+#define qpbddhdphq:bppq
+#define qbppdppbpq:hbhqqbbbdbh
+#define qhdpdbhddq:hqqphdhpbdpq
+#define qdhhhpbhbq:ddhpdhq
+#define qbhppbhdhq:ppdbhhqqppphb
+#define qbpdpbpdhq:dpphbdq
+#define qpdpbpdhpq:qdhhh
+#define qphdhphbpq:ppqqhdhdhbbhq
+#define qhpdhhbphq:qdhdd
+#define qpbdbdbdbq:ddphhhddq
+#define qbhhbpphhq:qbp
+#define qpbhdddbhq:qhpddph
+#define qdbhbpddbq:qbdpd
+#define qhbdphpbpq:phbbq
+#define qpdbbphhbq:qppbhdpphqqp
+#define qbhdhhhdpq:dhhqqdhbbp
+#define qdddbddpdq:qbbbdh
+#define qppdpdhdbq:qbdbdbhhd
+#define qpbhdbpphq:bhbdqqhdb
+#define qpdbhbpbpq:qdppb
+#define qddbdhhdbq:phpdpbq
+#define qppbbbpddq:qdbphbpbh
+#define qdphbdpdhq:dhbq
+#define qhdppbpdpq:hbbqqbdhhph
+#define qdhbbhdhhq:qbpdb
+#define qbdhdhdddq:qhbhpph
+#define qhdphpddhq:qqhpbdhdddq
+#define qbhpphbdbq:qpbdphddbq
+#define qppbbpbbhq:qpbpbh
+#define qdhhhhdbpq:OM(FROMC
+#define qhbhdpppbq:qdpbppdh
+#define qhbbphbppq:bhbqqddd
+#define qdhdbhbhpq:qbbpbd
+#define qpdhbhdddq:qhddh
+#define qpbbhdbbbq:ddbpdpqqpdb
+#define qhhddbhhhq:ddhpq
+#define qhhhbpphbq:pddqqpbbhhbhpqqbb
+#define qpdpddppdq:hbqqhhppdhpbqqp
+#define qpppbppdbq:dhhq
+#define qhdpdhhphq:qhdh
+#define qhbdpbpdhq:pppbqqp
+#define qphbddbphq:qhhpdpb
+#define qpppbbbhbq:qbdhddhdpq
+#define qphdddddhq:hppbhq
+#define qhbddhpbpq:ddpq
+#define qpbbhdpphq:ppbqqdhbphbhpqq
+#define qdddhbbhhq:VER(DBLC
+#define qbhphphpdq:qbhh
+#define qhdpdppbhq:ppphqqhdb
+#define qdphpdbdpq:qqdbbhhdhp
+#define qdhhhppbdq:dddbq
+#define qbdbbhphbq:qbd
+#define qphbpbbpdq:hbhbqqhb
+#define qhbhdhpbhq:bhbbqqpddpppd
+#define qbhbbbbhhq:qhbpp
+#define qbbbpbhpbq:qbbbhdbd
+#define qbhpddphbq:qbhbphb
+#define qddphpbpbq:hppqqdbbdphp
+#define qpdbbdpbpq:phq
+#define qhpddpdddq:dhbq
+#define qbdpbbpdpq:qbdbdbb
+#define qpdpbdbppq:hdpqq
+#define qbphddhbhq:dppdq
+#define qdhhhpdddq:qpbhhbhbpq
+#define qppbbpbhpq:hdbbbpq
+#define qhbhbhpbpq:pdpdbq
+#define qhppbhdhbq:qhbbp
+#define qbhphhbhbq:qhp
+#define qbdbbbbbhq:pbbpddqqddd
+#define qpdbbdpphq:XORPXL
+#define qpbhppbbhq:qhpbb
+#define qbdhphdbbq:pqqhpbdphddq
+#define qhhbpdhhpq:qdbphh
+#define qbpdhppdpq:qqpbpbbbh
+#define qhhhpbhhhq:qppdhb
+#define qpbbdhpphq:bphhbpq
+#define qbpbppddbq:hpdq
+#define qhdbddbppq:OR(PXLCRC(P
+#define qdhbpphdbq:dpdqqhd
+#define qdhhpbbbhq:qdh
+#define qphbhhhhhq:qqhphhbhpdqqphh
+#define qdddpdddhq:qpbbpp
+#define qhhbbbbdbq:qdhpdd
+#define qbbbbbpbdq:hpdhbpphq
+#define qbbhbpdbdq:qbbp
+#define qbdddbdppq:phhqqhhb
+#define qdhddhddpq:ppq
+#define qhddppdhbq:pbhbpq
+#define qdpddhhpdq:ddqq
+#define qphbpdppbq:qhdbbdpppq
+#define qhppddppdq:bbdhdhq
+#define qhbpphhbdq:ppdddqqddh
+#define qhbphbbdpq:qqphdhbbp
+#define qbhddbpbdq:bphdhhhdq
+#define qdphhbbbbq:hpbhbqqppdppp
+#define qhdhbphdhq:qppbbh
+#define qbhbhhhdpq:phdbdhpbq
+#define qbphpdhhpq:ddpbddq
+#define qhdppdbdbq:hhbbhpqqbhb
+#define qpdbpbppdq:dddbhdq
+#define qbhbhhphbq:qqhbdpbhbd
+#define qhdpppphbq:qbpdpdh
+#define qhphbdphpq:qbbhbbh
+#define qddhbbpbhq:dpphhhq
+#define qhdphhdppq:pqqphphphbhqq
+#define qbphhbbhbq:hpdbbq
+#define qdppbbbdhq:pqqhphdppphqq
+#define qdhpdhhdpq:pphhpq
+#define qbhhdphhpq:qphbdbdbbq
+#define qdbhdbphpq:hbbbpq
+#define qbbphbbppq:dppphhdq
+#define qhbpppbhhq:qhpdhhd
+#define qbbdhdpppq:qbddbpbdpq
+#define qpddhbhdpq:qqbdbbhdpbqq
+#define qdhpddbbhq:ITCH(END_S
+#define qbpdhddhhq:qdbddpd
+#define qhbhhdpbpq:bdphpbhq
+#define qbhhbhpppq:ppdpq
+#define qhhpbpdbdq:bdpbbphbq
+#define qddhbphpbq:phbpbbbpq
+#define qdphddhbbq:qdh
+#define qppbpdpbhq:qphdhhbbdqqph
+#define qddpppddhq:dbpdddqqb
+#define qhpppdbhpq:qdppb
+#define qhdbdhbpdq:hpbdhq
+#define qdddpddbbq:ddbq
+#define qdhhdbhhbq:ddhqqdhdhhphdqqd
+#define qdhhpdpbbq:bddppbpqqdddb
+#define qdphbddddq:bpdpqqdbdb
+#define qppppppdhq:qddhbd
+#define qhhddphhbq:qpbhbb
+#define qdbdpphbbq:pddq
+#define qbbhhhdbbq:qppbp
+#define qpdbbbbhbq:LCLICK(
+#define qhbdhpdphq:qpbpd
+#define qphdpbhbdq:qpphdb
+#define qhphpbbdhq:qpddhbpbp
+#define qbbpbphphq:dbbbbq
+#define qbbhpphbhq:qbdpbbbbpq
+#define qhbpdbpdhq:qdbpddpdhq
+#define qpbbbbddbq:pbdhq
+#define qbbhbbdpdq:dbbbq
+#define qdbpbhhdpq:bpqqdd
+#define qbbbhppddq:dbhppqqhbd
+#define qdppdbhppq:qbpdhd
+#define qhhbhddhdq:dbpbbqq
+#define qpdddpdbdq:bhbpdhq
+#define qbhphphhhq:qphhpbd
+#define qhbbddhhpq:phdphq
+#define qdpphddppq:qqppphbpdpqqdhbp
+#define qbhpphhdbq:qhdpdpp
+#define qpbdhhphhq:ddq
+#define qhhhhphhhq:dhbdqqhbddbbpbqqdph
+#define qbpbbphbhq:pbbqq
+#define qddppbphbq:qqhddhbdhpq
+#define qpbpdhhhdq:qdhpphhh
+#define qphbddbpbq:pdpq
+#define qhdhphpppq:qdbbh
+#define qhbpppdhbq:phpdbhddq
+#define qdbhdbbbpq:qdhbh
+#define qpbhphhbpq:hdqqdpppp
+#define qbphbhdbbq:qph
+#define qddbbppbbq:qph
+#define qpbhdhbhpq:bpq
+#define qhdpdhppdq:pbhqqdppbdpbpqqphh
+#define qpbbbphhhq:qpbb
+#define qdpdbdppbq:ONCAT($in_str
+#define qddpphbpdq:R(STRSE
+#define qdppbddppq:END_
+#define qbbddppbhq:= STRCONCAT("контрольная цифра: "
+#define qpbbhhbpdq:END_S
+#define qpdbpbdpdq:, $i >
+#define qpdhpppphq:input
+#define qdbdhbhpdq:LTIF_PIXEL_
+#define qphpdbhddq:$i, 1))
+#define qdhdhphbhq:in_str)
+#define qdphbppbhq:$ac
+#define qpphdbdppq:EN
+#define qdbphbpbhq:$num
+#define qphbbpbdhq:IF
+#define qpbhbbpddq:empty=0//LOGWRITE($num_orig, "  четное место.    + ", $num)
+#define qbpdpdhddq:$inp
+#define qbhpbphbpq:er($in)
+#define qhhdhbbpbq:$i, 1))
+#define qdbddpdhdq:IF($num
+#define qbhbdppbbq:ITE("В буфере шняга...")
+#define qdhdbphphq:E(1)
+#define qdbdpdpbpq:HEELDOWN(WH
+#define qhbbhhbhdq:heck) //===  проверяем правильность контрольной цифры  ====================
+#define qphhbpbhhq:um + $num
+#define qphbdbdbbq:um - 9
+#define qdpbhbdhbq:cum
+#define qpdphpddpq:empty=0//LOGWRITE("$accum  ", $accum)
+#define qhdhphbbbq:digit()
+#define qhbbbphhpq:RCUT(
+#define qdhddbphdq:HAL
+#define qbdhhbhphq:IP()
+#define qdpbppdhpq:calc
+#define qdhdpdhphq: = 0)
+#define qhpdhhdhhq:$in = 
+#define qdphpddppq:SUB(
+#define qdbbdphphq:um = $nu
+#define qbhdbhhdpq:che
+#define qdhbbppbbq:T
+#define qdphhdpbdq:GBOX("Ответ:  номер верный!", 0, 0)
+#define qdbhbphpdq:ELS
+#define qpbbdpdbdq:n_f = $de
+#define qpddpppddq: = STRFILTER(
+#define qppbbhbhbq:empty=0//$in = 4561 2612 1234 5467
+#define qddbphhbpq:ITE("Ответ: номер НЕ верный")
+#define qphddbpdpq:IF($num
+#define qbpppdbhhq:ault = ST
+#define qhpdhpphpq:END
+#define qphhhbpdpq:put = 1)
+#define qhbdphdphq:H($res)
+#define qphbpbbbpq:ck()
+#define qdppddbbhq:LOGW
+#define qbpphpddpq:$acc
+#define qhhddbphdq: = INT(
+#define qbpdbppphq:END_SWI
+#define qbbppdbhdq:$num
+#define qbdhppphhq:()
+#define qhdpdppddq:WNDSIZE(
+#define qphhpbdbpq:LOGW
+#define qdbbhhdbbq:IF($log =
+#define qhhdbpdhbq:_SUB
+#define qpbbhbdbbq:empty=0//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#define qphddpbddq:) * 10
+#define qhppbhbhdq:LOGWR
+#define qphdhbbpdq:$i=STRLEN(
+#define qdpbbppppq:ELS
+#define qhpdbphhhq:END
+#define qbbbdhdpdq:SUB(get_clip
+#define qpbhhdhpbq:os)
+#define qbdpdpbphq:END_
+#define qdddhpbpbq:FOR($i
+#define qdpdhddphq:, "0123456789", 1)
+#define qhddhphdbq:ITE("Введено:  ", $
+#define qbbbbhhpdq:$input
+#define qbdpbddhpq:($clip)
+#define qhhbpphhpq:D_IF
+#define qbdbbhdpbq:cum = $accum + 
+#define qbhbhbpdhq:clip()
+#define qdhpddbhbq:EL
+#define qdhdhppbbq:CAS
+#define qdbdbbbhbq:$text 
+#define qphddpbbbq:SUB(c
+#define qhbpdhdppq:$temp = DI
+#define qddhbdhbhq:empty=0//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#define qbhhpdpdbq:empty=0//LOGWRITE("clip1 = ", $clip)
+#define qbhbppdhhq:um = 0
+#define qddddhpdhq:MS(300)
+#define qhhpdpbphq:$accu
+#define qbpphphbpq:IF(S
+#define qdhdbhhpdq:IF
+#define qhdddbhppq:SWITC
+#define qhppddhphq:um = $n
+#define qhdpbhphbq:$i
+#define qpbdpbpppq:(ARCCO
+#define qpbpdbphbq:$def
+#define qhdbhppddq:LOGC
+#define qddddhdbhq:calculate_check_di
+#define qhdppphhdq:E
+#define qbbbphpdbq:INPUTBOX("Введите последовательность", $def
+#define qhpbbdbpdq:filter
+#define qbbhpbdhbq:$accum/10)
+#define qphhdppddq:ELS
+#define qhbddbbpbq:_orig = $
+#define qdhbpdddbq:"Ответ: номер верный")
+#define qpbhhpbhbq:INC
+#define qppphbhppq:RFILTER($ss
+#define qbbhhpdbbq: 0
+#define qppbbhhbhq:TOCLIP(
+#define qdhbhdbbbq:empty=0//LOGWRITE("default1 = ", $default)
+#define qpddhpdbbq:, -1)
+#define qbbpphpbdq:_IF
+#define qdddbddbhq:num)
+#define qpbphdbhdq: = 0
+#define qdpddphbbq:t, 0, 0)
+#define qhpbbbbdpq:HOW(1, $_xmax-3
+#define qbbddphbbq:WAIT
+#define qdbppbhbpq:UB
+#define qdbhhdbhhq:END
+#define qhpdhbpphq:("Вы ничего не выбрали. Завершение работы")
+#define qdhpbbpddq:END_
+#define qdbbbhhpdq:D_IF
+#define qbbbdbhbbq:$out)
+#define qbhhbppdhq:$in = ST
+#define qbbbhbbbpq:$out)
+#define qbhbphbddq:empty=0//                              Настройки
+#define qddbbhppdq:ut()
+#define qhdhhbdhdq:get_
+#define qdbdbhphbq: STRC
+#define qbdhpdbdbq:LOGWR
+#define qhphdppphq:ulate_check_
+#define qhddhpdphq:END
+#define qdddhbbhdq:IF
+#define qdbhphhhdq:$ac
+#define qhbhpphphq:SUB(filte
+#define qbdbhddhdq:$temp =
+#define qpbbhhbhpq:m_orig =
+#define qphphphppq:D_SUB
+#define qdphphdpbq:_IF
+#define qdhdpbpbpq:empty=0//LOGWRITE($num_orig, "  НЕ четное место. + ", $num)
+#define qdphhpbdhq:empty=0//TOCLIP("")
+#define qhhbphdphq:n_f
+#define qbbphphdhq:SETINFO(WND
+#define qdppppbppq: > 9)
+#define qppbpddddq:LOGS
+#define qhphhbhpdq:cum = $acc
+#define qbdphpdpbq:r, $ss) //===  фильтруем не цифры  ====================================
+#define qhddbdpbpq:RFILTER($in,
+#define qhhppdhpbq:os/2 - INT($pos/2
+#define qpbphbdhhq:) // изменения размеров окна лога
+#define qhhbphdhhq:HAL
+#define qhpdphpbdq:LEAR
+#define qdddhbdppq:SE
+#define qdppbhhdhq:$default 
+#define qhbdpbhbdq:STRCUT($i
+#define qhpbdhhbdq:$num 
+#define qdbpbdphbq:CYC
+#define qbbhdbhbdq: = 0
+#define qhpbdphddq: " 	", 0)  // пробел и табуляция
+#define qhddhbdhpq: = FROMCL
+#define qdhbphbhpq:"Ответ, контрольная цифра:  ", $c
+#define qhbbbhpdpq:SUB
+#define qdbdbpdddq:END
+#define qbppbpbbpq:inp
+#define qbhhpbbdhq:T
+#define qpbdphpbhq:D_CYC
+#define qbbhbhbbbq:rol_num = 10 
+#define qdbddppppq:E(2)
+#define qdhpphhhpq:ALOGBOX($tex
+#define qdphbbpdhq:num
+#define qphhdhhphq:TRLEN($in_f) 
+#define qhdbdhbbbq:("Ответ:  номер НЕ верный!", 0, 3)
+#define qdhdbhdhpq:_CYC
+#define qppphbpdpq:RITE(
+#define qhhpddhdhq:D(INIW
+#define qphbpbdhbq:$res = RADI
+#define qdbbpdbbpq:INC($p
+#define qddbbhhdpq:SUB(i
+#define qbbhbbhhbq:empty=0//==============================================================================
+#define qhbbpdphbq:END_
+#define qphbpphbbq:empty=0//$in = 4561	2612	1234	5467
+#define qdddhbhbdq:E
+#define qhbdhhppdq:LOGWRITE
+#define qpbhbphhpq:fault
+#define qbdpbbphbq:IF
+#define qbdhppdddq:$tem
+#define qppdhbpbbq:CAS
+#define qhbhhhbbbq: = 0)
+#define qphphphbhq:($in_st
+#define qdbbdhbhbq:$input
+#define qhddpphbdq:) //===  проверяем буфер обмена  ===================================
+#define qdhhdbbbpq: = 1
+#define qbdhhphdbq:MS(300)
+#define qpbpbbbhbq:, $control
+#define qbphbbpdbq:$in_str)
+#define qhbdddbhdq: = 3
+#define qbddpdhppq:=STRLEN
+#define qphdbdhpbq:35, 28)      // отображение окна лога  (330)
+#define qphdhpbdpq:m - 9
+#define qhpbddpbbq:ut = DIALOGBOX("Неправильный ввод! Попробовать ещё?", 1, 3)
+#define qbdhpdpdbq:$pos =
+#define qpdbbpdbhq: > 9)
+#define qbdpdbbbdq:empty=0//LOGWRITE("Неправильный ввод!")
+#define qbhphbpdhq:RITE("Итоговый номер:  ", 
+#define qphdhbdppq:= $n
+#define qhbpbdpbhq:WHIL
+#define qhdpbbdppq:UT(TFREADARR
+#define qdhhdphpbq:FOR(
+#define qdpdbbhbbq:$clip
+#define qddpbhpddq:$nu
+#define qbddbpbdpq:git) //===  определяем контрольную цифру  ====
+#define qddhphphhq:EN
+#define qpbbppbpbq:empty=0//LOGWRITE("in1 = ", $in)
+#define qpbpbhpdbq:empty=0// показывать окно лога
+#define qbhbdbhdhq:$num
+#define qbdbdbhhdq:$clip
+#define qhpbbdhdhq:ault, 10)
+#define qbdbdbbbpq:empty=0//LOGWRITE($num_orig, "  НЕ четное место. + ", $num)
+#define qpbhhbhbpq:$in_
+#define qhddbbhpbq:IF($ac
+#define qddhbbhpbq:p = DIALOGBOX("Вы ничего не выбрали. Завершение работы", 0, 0)
+#define qhhbhhphpq:$in_str, 
+#define qbbpbbbhbq:IF($p
+#define qhbdhbddhq:IF(STRLE
+#define qdhdhhphdq:N($default)
+#define qbddhppbhq:= ""
+#define qhdhdhbbhq:um * 2
+#define qhpddphbpq:WAIT
+#define qbhhphpdhq:EN
+#define qbpdhdhdhq:END_
+#define qpbdphddbq:$nu
+#define qddbbbpppq: 0, -1)
+#define qhdbhhddbq:XORPXL(
+#define qppbhdpphq:$input =
+#define qhbpphdhdq:DEFA
+#define qpbbbpbhpq:E
+#define qphhhdhhdq:) ! 0)
+#define qbbpdbddpq:$pos
+#define qbdpbbbbpq:IF(
+#define qpppdbhbdq:END_
+#define qhpbbppbhq:- ($accum/1
+#define qbhddhhppq:$n
+#define qppbpdhbdq:$num
+#define qdhhhbpdpq:$out =
+#define qhdbpppdpq:IF
+#define qdbppphhpq:ACE(STR
+#define qdhpdpppbq:EN
+#define qbphdhhhdq:ontrol_num)
+#define qhpbddbdhq:WNDFIND("Лог"
+#define qphdhhbbdq:0 - INT($accum/10)
+#define qbbhhbbhpq:LOGWR
+#define qbdpbhpphq:$defa
+#define qbpbppdppq: - INT($po
+#define qhbdhpdhbq:m = 0
+#define qbbhbdppdq: 1)
+#define qhphddppbq:str = $i
+#define qddhdbdddq:s/2) = 0)
+#define qdbpbhbbbq:n_str, 
+#define qpbdhphhhq: * 2
+#define qpddhbpbpq:$temp
+#define qdbddppbpq:, $control_
+#define qdhhpbhphq:ULT
+#define qbdhddphpq:), 336, 260
+#define qppdpppppq:($pos)
+#define qbdpbddhbq:nput) //===  ввод числа  ==================================================
+#define qhphdbpbbq:filt
+#define qdbpddpdhq:$n
+#define qdbbhhdhpq:/10 - INT(
+#define qbbppdddbq:ult = ""
+#define qphhbddhdq:OBOX("Что делаем:", "Проверить правильность номера", "Определить контрольную цифру")
+#define qhdbbdpppq:m = $num
+#define qbpdbppdpq:empty=0//LOGWRITE($num_orig, "  четное место.    + ", $num)
+#define qbdpbbbddq:_SUB
+#define qppbpddhpq: = INT(ST
+#define qhbdbbbpbq:$log
+#define qbbddpdhhq:END_
+#define qbbbhdbdhq:$cont
+#define qdppbdpbpq:E($in
+#define qbbdpphhhq: $num
+#define qhpbdhdddq: = DIALO
+#define qdbphhppbq:LOGWRITE(
+#define qhdbbbhpbq:TCH
+#define qhdhdhhdhq:empty=0//LOGWRITE("$accum  ", $accum)
+#define qhhbbbbhdq: DIALOGBOX
+#define qdbpdppbhq:_num, "  Номер: ", $
+#define qpbhhhhhhq: 2)
+#define qbhbhpbhbq:$clip, " 	", 0)  // пробел и табуляция
+#define qbbpbdpphq:empty=0//LOGWRITE("clip2 = ", $clip)
+#define qddphhhddq:r), $i > 0
+#define qbdhddhdpq:IF($pos/2
+#define qbbppdppdq:= 0)
+#define qppddbbbbq:out)
+#define qbphbhbhbq:IWRITE(
+
+qbhpddphbqqpbdhhphhq
+qbpdbhdddqqhbpdpbhpq
+qppbbpbbhqqdhdbhpdbq
+qhhbpdbhpqqpddphhphqqpbpphpbhq
+
+qppppppdhqqpdphbpdbq
+
+
+qbdhdhdddqqdddpddpdqqddbdhhdbq
+qhbdhpdphqqhbdbphpbqqbhppbhdhqqdbbbppdbqqbdhbbdbdq
+qdpppbbdbqqbbpddbppqqdphbdpdhq
+
+qdddbddpdqqdhbpphdbqqbpdpbpdhq
+qppdhbdppqqhdbdhbpdq
+qppdpdhdbqqddppbphbqqdhphppddq
+qbhphphpdqqhbhbhpbpq
+
+qhddppbhbqqhbhdhpbhqqbddhpbpdq
+qdhdbhbhpqqbpbhpbphq
+
+qpbhppbbhqqdpdpdpppqqhhddbhhhq
+qdbhdbbbpqqbbhbbdpdq
+qdbbdhhphqqdhhdbhhbqqdhhpdhhdq
+qbdbbhphbqqbhdbdhdbqqdddpddbbq
+qhdppdbpbqqhdppdbdbqqpdpbbhbpq
+qbbddbbhpqqpbhdbpphqqbbhhbhppq
+qpdbbbhhdqqhbdpbpdhqqbdpbhdbdq
+
+qdhhhddbpqqhppdbpdbqqhpddpdddq
+qdbdphpbpqqpdphhphbqqpdddpdbdq
+qdphpddpdqqhbbpdpdbqqppbbpbhpq
+qdhphhbhdqqhdpdhppdqqhbhbpdphq
+qhbpppbhhqqdpbhhbbdqqhppddppdq
+qdbhpddddqqbpdbbdppqqbdhphdbbq
+qdddpdddhqqbhhpbpbhq
+qbhhbdhphqqhhbhddhdqqhdpppdhdq
+qbpbbdbbdqqddpbhbhdqqbbbbbphpq
+qdhhpbdhhqqdhbbdhphqqbphddhbhq
+qhpppdbhpqqpdhpppppqqphdddddhq
+qbbdhphbpqqhdppbpdpqqbhphbdpbq
+qbbddbpphqqddddbdbhq
+qhdpppphbqqdpddhhpdqqhddbbphbq
+qbbhpphbhqqpdbbphhbqqhdbphdppq
+qbbddbbphqqbhdhhhdpqqdphhddppq
+qdbhbpddbqqpphdppdhqqhhpbpdbdq
+qbdphdbphqqpdbhbdhpqqdphbppbdq
+qdpphbhbpqqphbpbbpdqqpdbpbppdq
+qdpdpphbhqqpbpdhphpqqbpbppddbq
+qdppdbhppqqbpdddbppqqbpppbdbpq
+qdhhhpdddqqdpbphbbbqqdpppphphq
+qhdpbhpdpqqhphhhhdhqqhbpbhdhhq
+qhpbhpppbqqddpppddhqqbddbhbbbq
+
+qbddpddhhqqpddhdpdbqqdhhbddhpq
+qphbddbphqqhdhpddphqqppbhdbhpq
+qbbhbpdbdqqddddpbhbqqbdphhbhbq
+qpdhphbbpqqhbphbbdpqqphbbddhhqqhbppddpdqqddbdbbbhq
+qpbdphhhhqqdphpdbdhqqbhbhhphbqqdppbdpdbqqddppdbphq
+qbbhhhdbbqqhhhhphhhqqhbbhpdhbq
+qhhhhddhpqqddbpbhddqqhbhpdhhbq
+qpppbbbhbqqdhbbhhpdqqpddphddbq
+qphbbhhppqqppphbhhbqqphdhphbpq
+qbpdhddhhqqpbhphhbpqqpbddhdphq
+qhbpdbpdhqqdhbddbddqqbhhdphhpq
+qhppbhdhbqqhpbpbhpdqqpbbbbddbq
+qhhddphhbqqdbdpphbbq
+qbbdhdbdbqqppdpdhhbqqbbphbbppq
+qhphdpbbbqqbphphbphq
+qdphddhbbqqbdbbbbbhqqppdbppbbq
+qpppbpdhpqqpddhbhdpqqpdppdhhpq
+qhdhdhdbpqqpppbddbhqqhbhhdpbpq
+
+qhdpdhhphqqdbhbbpppq
+qpdhbhddpqqppbdphdhqqdphpdbdpqqhpbpdbphqqhpphbhhhq
+qhpbhppbdqqdpphddppqqdhhhppbdq
+qhphpbbdhqqhdphpddhqqpbbpdbphq
+qhhbbbbdbqqhbbphbppqqhbhhdhdpq
+qpbhdhhhdqqbbdbdbhbqqpbbdhpphq
+qhdbpdpppqqhpbbbbhhqqhbhdbhhbq
+qbppdhbppqqdphdddbdqqpbpbbdhpq
+qpbbbphhhqqbddbbbhbqqhddppdhbq
+
+qhbbpbdhbqqdbbbhbbbqqbbdhdpppq
+qphbhhdphqqbhddphphqqbhpbpbdhq
+qbbddbbhhqqppdddhhhqqbphhbbhbq
+qhphbbdhdqqhbhhbpppqqhdphhdppqqpbdbdbdbqqhhddbdhhq
+qppbbbpddqqdbhppdhhqqddhhpbdhqqdhhppdbhqqhbpppdhbq
+qbhddhdphqqhhhbpphbqqddhbbpbhq
+qbhbdddbdqqdphhbbbbqqdhddhddpq
+qphdpdhbdqqpdpddppdqqhpdbhpbpq
+qbhpphbdbqqphbpdppbqqdbbdhphdq
+qddbbppbbqqpbbhdbbbqqpbdphbpbq
+qdpdddpdpqqddphpbpbqqhdpdbhddq
+qbhphhbhbqqbbbpdhhbqqbddphpbbq
+qdbbdbpbpqqbhhbhpppq
+qbphbdpphqqhhpdhbbbqqpddbbdhpq
+qbdpbbpdpqqpbhdhbhpq
+qhhpphppdqqbdddbdppqqdhpdhhdpq
+qbdpdbdhbqqphbhhhhhqqdbbpbdbhq
+qpdhbhdddqqhpbbpdphqqdhhpbppbq
+
+qbbppbpdhqqhbddhpbpq
+
+qbbbpbhpbqqbppbpddbqqbbpdbpbhqqppbpdpbhqqbphpdhhpq
+qpdpbpdhpqqdphbddddqqbpbppbhpqqdhhpdpbbqqbpbhbpphq
+qhdhbphdhqqbppdppbpqqhpbdpbdbq
+qhhbpdhhpqqpbbhdpphqqbhddbpbdq
+qbhphphhhqqhbbphbhhqqdbhdbphpq
+qdbhhdpdbqqbdhbbphpqqbpdhppdpqqpdpddppbqqbbpbphphq
+qddhbdhhhqqpbpdhhhdqqhdbppdhbq
+qpdbhbpbpqqbpdpbbhbqqphbddbpbq
+
+qhphbdphpqqpdhdphbbq
+
+
+qpbhdddbhqqdbpbhhdpqqdhhhpbhbq
+qhdhpbhphqqdbbhppdbqqdddddpphq
+qhdhphpppqqppbbdddhqqdbhphbhpq
+qdbpbpdbpqqhdddhdhhqqbhbhhhdpq
+qbhpphhdbqqbhbbdppbqqdhbbppdpqqbhhhpphbqqpppbppdbq
+qphdpbhbdqqbddbpbdbqqpbbhbbdhq
+
+qbbhbhphpqqbhhpdppbq
+qhbhdbdbbqqhbdphpbpq
+qbphbhdbbqqbpddddddqqhbbhbhhpq
+qhdphhpbbqqbbbhppddqqhbbddhhpq
+qhhhpbhhhqqbpbbphbhqqdbpdhpbbq
+qbhhbpphhqqdbpdpbhpqqhbdbddpdq
+qhhbpdhhhqqpdpbdbppqqddhbphpbq
+qdhhpbbbhqqbhpbbbhdqqbdbbhbhdq
+qdddpdhphqqhhbhdbdpqqdhbhhdhbq
+qhbhdpppbqqdppbbbdhqqdpbphhdhq
+qbhbbbbhhqqhhhhbhhhqqpdbbdpbpq
+qbbddbdhhqqphhpdppdqqbbbbbpbdq
+qpdhdpppbqqhbpphhbdqqpphdbhpdq
+qdhbbhdhhqqhdpdppbhqqphbhpdpdq
+qhpdhhbphqqhdhbdhppqqhbdbdhphq

@@ -1,0 +1,24 @@
+# системные файлы
+Thumbs.db
+.DS_Store
+*~
+
+
+# игнорируемые файлы проекта
+AGClient*/config.ini
+*.pyc
+log.txt
+Test_script_protection.cms
+Test_script_decode.cms
+Test_script_big_protection.cms
+Test_script_big_decode.cms
+Luhn_check*
+
+# игнорируемые директории проекта
+#/**/Разработка*/
+/Temp/
+
+
+# нужные файлы в запрещённых директориях
+
+

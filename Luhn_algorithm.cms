@@ -1,0 +1,144 @@
+#name "Алгоритм Луна"
+// Author: Vint
+// Version: 1.2 (07.03.2017)
+// Скрипт для Clickermann v4.12 001
+// 4561 2612 1234 5467
+//#autorun
+
+//                              Настройки
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// показывать окно лога
+$log = 0
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+SUB(filter, $ss) //===  фильтруем не цифры  ====================================
+    $default = STRFILTER($ss, "0123456789", 1)
+END_SUB
+
+SUB(get_clip) //===  проверяем буфер обмена  ===================================
+    //TOCLIP("")
+    $clip = FROMCLIP()
+    //LOGWRITE("clip1 = ", $clip)
+    
+    $clip = STRFILTER($clip, " 	", 0)  // пробел и табуляция
+    //LOGWRITE("clip2 = ", $clip)
+    
+    filter($clip)
+    //LOGWRITE("default1 = ", $default)
+    IF(STRLEN($default) = 0)
+        $default = ""
+        LOGWRITE("В буфере шняга...")
+    END_IF
+END_SUB
+
+SUB(input) //===  ввод числа  ==================================================
+    get_clip()
+    $input = 1
+    WHILE($input = 1)
+        $in = INPUTBOX("Введите последовательность", $default, 10)
+        $in = STRFILTER($in, " 	", 0)  // пробел и табуляция
+        //LOGWRITE("in1 = ", $in)
+        filter($in)
+        $in_f = $default
+        IF(STRLEN($in_f) = 0)
+            $default = ""
+            WAITMS(300)
+            //LOGWRITE("Неправильный ввод!")
+            $input = DIALOGBOX("Неправильный ввод! Попробовать ещё?", 1, 3)
+            IF($input = 2)
+                HALT
+            END_IF
+        ELSE
+            $input = 3
+        END_IF
+    END_CYC
+    $in_str = $in_f
+    LOGWRITE("Введено:  ", $in_str)
+END_SUB
+
+SUB(check) //===  проверяем правильность контрольной цифры  ====================
+    $accum = 0
+    $pos = 0
+    FOR($i=STRLEN($in_str), $i > 0, -1)
+        $num = INT(STRCUT($in_str, $i, 1))
+        $num_orig = $num
+        INC($pos)
+        IF($pos/2 - INT($pos/2) = 0)
+            $num = $num * 2
+            IF($num > 9)
+                $num = $num - 9
+            END_IF
+            //LOGWRITE($num_orig, "  четное место.    + ", $num)
+        ELSE
+            //LOGWRITE($num_orig, "  НЕ четное место. + ", $num)
+        END_IF
+        $accum = $accum + $num
+    END_CYC
+    
+    //LOGWRITE("$accum  ", $accum)
+    IF($accum/10 - INT($accum/10) = 0)
+        LOGWRITE("Ответ: номер верный")
+        $temp = DIALOGBOX("Ответ:  номер верный!", 0, 0)
+    ELSE
+        LOGWRITE("Ответ: номер НЕ верный")
+        $temp = DIALOGBOX("Ответ:  номер НЕ верный!", 0, 3)
+    END_IF
+END_SUB
+
+SUB(calculate_check_digit) //===  определяем контрольную цифру  ====
+    $accum = 0
+    $pos = 0
+    FOR($i=STRLEN($in_str), $i > 0, -1)
+        $num = INT(STRCUT($in_str, $i, 1))
+        $num_orig = $num
+        INC($pos)
+        IF($pos/2 - INT($pos/2) ! 0)
+            $num = $num * 2
+            IF($num > 9)
+                $num = $num - 9
+            END_IF
+            //LOGWRITE($num_orig, "  четное место.    + ", $num)
+        ELSE
+            //LOGWRITE($num_orig, "  НЕ четное место. + ", $num)
+        END_IF
+        $accum = $accum + $num
+    END_CYC
+    
+    //LOGWRITE("$accum  ", $accum)
+    
+    $control_num = 10 - ($accum/10 - INT($accum/10)) * 10
+    $out = STRCONCAT($in_str, $control_num)
+    TOCLIP($out)
+    LOGWRITE("Ответ, контрольная цифра:  ", $control_num)
+    LOGWRITE("Итоговый номер:  ", $out)
+    $text = STRCONCAT("контрольная цифра: ", $control_num, "  Номер: ", $out)
+    $temp = DIALOGBOX($text, 0, 0)
+END_SUB
+
+//==============================================================================
+
+
+WAITMS(300)
+LOGCLEAR
+IF($log = 1)
+    LOGSHOW(1, $_xmax-335, 28)      // отображение окна лога  (330)
+    WNDSIZE(WNDFIND("Лог"), 336, 260) // изменения размеров окна лога
+END_IF
+
+//$in = 4561 2612 1234 5467
+//$in = 4561	2612	1234	5467
+$res = RADIOBOX("Что делаем:", "Проверить правильность номера", "Определить контрольную цифру")
+SWITCH($res)
+CASE(1)
+    input()
+    check()
+CASE(2)
+    input()
+    calculate_check_digit()
+DEFAULT
+    LOGWRITE("Вы ничего не выбрали. Завершение работы")
+    $temp = DIALOGBOX("Вы ничего не выбрали. Завершение работы", 0, 0)
+END_SWITCH
+HALT
