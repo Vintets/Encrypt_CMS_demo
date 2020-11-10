@@ -108,7 +108,7 @@ class Ini():
 if __name__ == '__main__':
     actor_1 = Ini() # инициация класса
 
-    # raw_input('-------------   END   ---------------')
+    # raw_input('---------------   END   ---------------')
 
     # filter(lambda s: s != 'global_settings', self.parser.sections())
 

@@ -47,7 +47,7 @@ if __name__ == '__main__':
     print class_gen.get_generate()[:10]
 
     # time.sleep(1)
-    raw_input('-------------   END   ---------------')
+    raw_input('---------------   END   ---------------')
     
 # ------------------------------------------------------------------------------
 # chdir /D D:\Яндекс Диск\_Python\A_Python\Encrypt_CMS
